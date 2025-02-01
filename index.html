@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
     <title>Nature's Platter</title>
-    
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/8c27994e98.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+                  
+            tailwind.config = {
+            theme: {
+                extend: {
+                fontFamily: {
+                    'poppins': ['Poppins', 'serif'],
+                    'sora': ['Sora', 'serif'],
+                },
+                colors: {
+                    green: {
+                    100: '#63B76D',
+                    400:  '#179800',
+                    800: '#115414',
+                    },
+                    gray: '#EFEBE3',
+                    blue: {
+                    100: '#2A4D97',
+                    800: '#102861',
+                    }
+                }
+                },
+            },
+        }
+    </script>
 </head>
-<body>
-    <canvas class="md"></canvas>
+<body class="font-sora">
+    <header class="container p-4 mx-auto flex justify-between items-center md:max-w-screen-md lg:max-w-[1320px] h-20 lg:min-h-24">
+        <div>
+            <img src="assets/logo-header.png" alt="Header Logo">
+        </div>
+        <nav class="hidden lg:block">
+            <ul class="flex gap-x-8">
+                <li><a href="#" class="hover:text-green-400">Product</a></li>
+                <li><a href="#" class="hover:text-green-400">Services</a></li>
+                <li><a href="#" class="transition hover:text-green-400">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:flex gap-x-6 items-center" >
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button class="border py-2 px-7 rounded-lg border-green-400 hover:border-black hover:bg-black hover:text-white">Login</button>
+            <button class="bg-green-400 text-white py-2 px-7 rounded-lg  hover:border-black hover:bg-black hover:text-white">Register</button>
+        </div>
+        <div class="lg:hidden">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+    </header>
 </body>
 </html>
