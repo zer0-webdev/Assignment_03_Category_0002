@@ -40,6 +40,19 @@
             },
         }
     </script>
+    <style>
+        .animation{
+            animation: textZoomOut 2s infinite ease-in-out;
+        }
+        @keyframes textZoomOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+    </style>
 </head>
 <body class="font-sora">
     <header class="container p-4 mx-auto flex justify-between items-center border-b border-green-400 lg:border-b-0  lg:max-w-[1320px] h-20 lg:min-h-24">
@@ -70,7 +83,7 @@
     <!-- Hero Section -->
      <section class="pt-12 bg-gradient-to-t from-[#EFEBE3] to-white">
         <div class="w-[341px] lg:w-[850px] mx-auto">
-            <h1 class="font-semibold text-3xl lg:text-5xl text-center pb-4">Freshness <span class="text-green-400">You Can<br>
+            <h1 class="animation font-semibold text-3xl lg:text-5xl text-center pb-4">Freshness <span class="text-green-400">You Can<br>
                 Count</span> On, Prices You’ll Love!
             </h1>
             <p class="text-center pb-4">
@@ -293,5 +306,63 @@
         </div>
        </section>
 
+       <section class="p-10 mb-12 lg:mb-36  lg:max-w-[1320px] mx-auto bg-green-200 rounded-xl">
+        <h2 class="text-xl lg:text-3xl text-green-400 pb-8 lg:pb-12 ">Testimonial</h2>
+        <div class="flex flex-col lg:flex-row gap-5 justify-center items-stretch text-center lg:text-left">
+            <div class="bg-gray p-7 rounded-xl lg:w-1/2">
+                <img class="mx-auto lg:mx-0 mb-4 rounded-xl" src="assets/ava-5.webp" alt="service">
+                <p class="pb-4">"Outstanding service and great attention to detail! The team delivered exactly what I needed. I’ll definitely be coming back!"</p>
+                <h3 class="font-semibold text-xl">Joshua</h3>
+                
+            </div>
+            <div class="bg-gray p-7 rounded-xl lg:w-1/2">
+                <img class="mx-auto lg:mx-0 mb-4 rounded-xl" src="assets/ava-1.webp" alt="service">
+                <p class="pb-4">"Amazing experience from start to finish! The team was professional, and the results were beyond my expectations. I highly recommend their services!"</p>
+                <h3 class="font-semibold text-xl">Reynor</h3>
+            </div>
+            
+        </div>
+      </section>
+       <!-- Basket  -->
+       <section class="overflow-auto relative z-50 -mb-36 py-5 mx-4 lg:py-14 px-4  lg:max-w-[1320px] lg:mx-auto bg-gray rounded-xl">
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:gap-8">
+            <img class="w-3/5 mx-auto lg:w-fit lg:mx-0" src="assets/vegetable-busket.png" alt="basket">
+            <div class="text-center lg:text-left">
+                <h2 class="text-xl lg:text-3xl text-green-400 pb-8 lg:pb-12 ">Get Grocery News</h2>
+                <p>Exclusive training tips, ticks, product deals and more.</p>
+                <form action="#">
+                    <input class="p-2 h-[42px] w-[300px] lg:h-[72px] lg:w-[472px] rounded-xl block mx-auto my-6" type="email" placeholder="Enter email address">
+                    <input class="bg-green-400 text-white py-2 px-7 rounded-lg  hover:border-black hover:bg-black hover:text-white" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+       </section>
+
+       
+       <!-- Footer -->
+       <footer class= "-z-50 bg-green-400 pb-20 pt-60">
+        <div class="lg:max-w-[1320px] lg:mx-auto flex flex-col lg:flex-row gap-9 p-4 lg:items-end justify-between">
+            <div class="">
+                <img src="assets/logo-footer.png" alt="">
+                <p class="text-white">Discover a world of treats, toys, and<br> essentials handpicked for your furry friends</p>
+            </div>
+            <div class="">
+                <ul>
+                    <li><a href="#" class="hover:text-black text-white">Product</a></li>
+                <li><a href="#" class="hover:text-black text-white">Services</a></li>
+                <li><a href="#" class="transition hover:text-black text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <span class="text-white">Follow Us</span>
+                <div class="flex gap-5 mt-4">
+                    <i class="fa-brands fa-facebook-f text-white hover:text-black"></i>
+                    <i class="fa-brands fa-instagram text-white hover:text-black"></i>
+                    <i class="fa-brands fa-linkedin-in text-white hover:text-black"></i>
+                    <i class="fa-brands fa-youtube text-white hover:text-black"></i>
+                </div>
+            </div>
+        </div>
+       </footer>
 </body>
 </html>
